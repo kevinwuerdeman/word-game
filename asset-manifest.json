@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kevinwuerdeman/word-game/static/css/main.83879bb0.chunk.css",
+    "main.js": "/kevinwuerdeman/word-game/static/js/main.c49fb74d.chunk.js",
+    "main.js.map": "/kevinwuerdeman/word-game/static/js/main.c49fb74d.chunk.js.map",
+    "runtime~main.js": "/kevinwuerdeman/word-game/static/js/runtime~main.7f34ec10.js",
+    "runtime~main.js.map": "/kevinwuerdeman/word-game/static/js/runtime~main.7f34ec10.js.map",
+    "static/js/2.f174a29b.chunk.js": "/kevinwuerdeman/word-game/static/js/2.f174a29b.chunk.js",
+    "static/js/2.f174a29b.chunk.js.map": "/kevinwuerdeman/word-game/static/js/2.f174a29b.chunk.js.map",
+    "index.html": "/kevinwuerdeman/word-game/index.html",
+    "precache-manifest.943ed9fd397fa3ea5e36cef7c98f8ada.js": "/kevinwuerdeman/word-game/precache-manifest.943ed9fd397fa3ea5e36cef7c98f8ada.js",
+    "service-worker.js": "/kevinwuerdeman/word-game/service-worker.js",
+    "static/css/main.83879bb0.chunk.css.map": "/kevinwuerdeman/word-game/static/css/main.83879bb0.chunk.css.map"
+  }
+}
