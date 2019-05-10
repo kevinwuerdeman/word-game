@@ -56,20 +56,17 @@ class AdminApp extends React.Component {
       const newVowel = vowels[random(vowels)];
       randomLetters = randomLetters.concat([newVowel])
       vowels.splice(vowels.indexOf(newVowel),1)
-      console.log(newVowel, vowels);
     }
     for(let i = 0; i < 2; i++) {
       const newConsonant = consonants[random(consonants)];
       randomLetters = randomLetters.concat([newConsonant])
       consonants.splice(consonants.indexOf(newConsonant),1)
-      console.log(newConsonant, consonants);
     }
     let full = vowels.concat(consonants)
     for(let i = 0; i < 5; i++) {
       const newLetter = full[random(full)];
       randomLetters = randomLetters.concat([newLetter])
       full.splice(full.indexOf(newLetter),1)
-      console.log(newLetter, full);
     }
     this.gameRef.child(this.state.gameID).update({letters: randomLetters})
     this.setState({letters: randomLetters});
@@ -112,7 +109,7 @@ class AdminApp extends React.Component {
   }
 
   handleNewWords = (snapshot) => {
-    this.setState({words: snapshot.val()[this.state.gameID]},() => console.log(this.state.words));
+    this.setState({words: snapshot.val()[this.state.gameID]});
     const scoreBoard = {}
     snapshot.val()[this.state.gameID] && Object.keys(snapshot.val()[this.state.gameID]).forEach((entry) => {
       const word = snapshot.val()[this.state.gameID][entry]
@@ -161,7 +158,6 @@ class AdminApp extends React.Component {
 
   render () {
     const { words, time, input, letters, scoreBoard, name, gameID, startGame, leader } = this.state;
-    console.log(this.gameRef)
     return (
       <div className="App">
         <GameDisplay

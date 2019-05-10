@@ -43,7 +43,7 @@ export const GameDisplay = (props) => {
       </div>
     </div>
     </header>
-    <h5>Invite players with this link: http://localhost:3000/game/{gameID}</h5>
+    <h5>Invite players with this link: https://kevinwuerdeman.github.io/word-game/#/game/{gameID}</h5>
     </div>
   );
 }

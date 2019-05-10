@@ -2,14 +2,18 @@
   "name": "word-game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kevinwuerdeman.github.io/word-game/",
   "dependencies": {
     "firebase": "^5.11.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

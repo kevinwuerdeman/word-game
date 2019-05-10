@@ -73,7 +73,7 @@ class App extends React.Component {
   }
 
   handleNewWords = (snapshot) => {
-    this.setState({words: snapshot.val()},() => console.log(this.state.words));
+    this.setState({words: snapshot.val()});
     const scoreBoard = {}
     snapshot.val() && Object.keys(snapshot.val()).forEach((entry) => {
       const word = snapshot.val()[entry]
@@ -118,7 +118,6 @@ class App extends React.Component {
 
   render () {
     const { words, time, input, letters, scoreBoard, name, leader } = this.state;
-    console.log(this.gameRef)
     return (
       <div className="App">
         <GameDisplay
